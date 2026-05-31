@@ -118,17 +118,19 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#09090B]/90 via-[#09090B]/40 to-transparent" />
         
         {/* Banner Content Overlay */}
-        <div className="absolute bottom-6 left-6 md:left-12 max-w-2xl pr-6 flex flex-col justify-end h-full">
-          <Badge className="bg-[#E2B53E] text-black font-semibold uppercase tracking-wider mb-2 self-start hover:bg-[#E2B53E]/90">
-            Premium Starter Bundle
-          </Badge>
-          <h1 className="font-serif text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight drop-shadow-md">
-            45-Day Vending Machine Business <br className="hidden md:inline" />
-            <span className="text-[#E2B53E]">Starter Kit + CRM System</span>
-          </h1>
-          <p className="text-slate-300 text-sm md:text-base mt-2 max-w-xl drop-shadow hidden sm:block">
-            Build the foundation for your vending machine business in 45 days without guessing, messy spreadsheets, or missed follow-ups. Organize your prospects, clients, and tasks in one place.
-          </p>
+        <div className="absolute inset-y-0 left-0 pl-6 md:pl-12 flex flex-col justify-center max-w-2xl z-10">
+          <div className="p-6 md:p-8 bg-black/60 border border-white/10 backdrop-blur-md rounded-xl max-w-xl shadow-2xl flex flex-col gap-2">
+            <Badge className="bg-[#E2B53E] text-black font-semibold uppercase tracking-wider self-start hover:bg-[#E2B53E]/90">
+              Premium Starter Bundle
+            </Badge>
+            <h1 className="font-serif text-2xl md:text-4xl font-bold tracking-tight text-white leading-tight drop-shadow-md">
+              45-Day Vending Machine Business <br className="hidden md:inline" />
+              <span className="text-[#E2B53E]">Starter Kit + CRM System</span>
+            </h1>
+            <p className="text-slate-300 text-xs md:text-sm max-w-xl drop-shadow hidden sm:block">
+              Build the foundation for your vending machine business in 45 days without guessing, messy spreadsheets, or missed follow-ups. Organize your prospects, clients, and tasks in one place.
+            </p>
+          </div>
         </div>
       </div>
 
