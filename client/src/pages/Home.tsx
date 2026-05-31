@@ -120,12 +120,12 @@ export default function Home() {
         {/* Banner Content Overlay */}
         <div className="absolute inset-y-0 left-0 pl-6 md:pl-12 flex flex-col justify-center max-w-2xl z-10">
           <div className="p-6 md:p-8 bg-black/60 border border-white/10 backdrop-blur-md rounded-xl max-w-xl shadow-2xl flex flex-col gap-2">
-            <Badge className="bg-[#F04438] text-black font-semibold uppercase tracking-wider self-start hover:bg-[#F04438]/90">
+            <Badge className="bg-[#E2B53E] text-black font-semibold uppercase tracking-wider self-start hover:bg-[#E2B53E]/90">
               Premium Starter Bundle
             </Badge>
             <h1 className="font-serif text-2xl md:text-4xl font-bold tracking-tight text-white leading-tight drop-shadow-md">
               45-Day Vending Machine Business <br className="hidden md:inline" />
-              <span className="text-[#F04438]">Starter Kit + CRM System</span>
+              <span className="text-[#E2B53E]">Starter Kit + CRM System</span>
             </h1>
             <p className="text-slate-300 text-xs md:text-sm max-w-xl drop-shadow hidden sm:block">
               Build the foundation for your vending machine business in 45 days without guessing, messy spreadsheets, or missed follow-ups. Organize your prospects, clients, and tasks in one place.
@@ -143,14 +143,14 @@ export default function Home() {
             <TabsList className="bg-zinc-900/60 p-1 border border-white/[0.04]">
               <TabsTrigger 
                 value="starter-kit" 
-                className="data-[state=active]:bg-[#F04438] data-[state=active]:text-black gap-2 font-medium py-2 px-4 transition-all"
+                className="data-[state=active]:bg-[#E2B53E] data-[state=active]:text-black gap-2 font-medium py-2 px-4 transition-all"
               >
                 <BookOpen className="w-4 h-4" />
                 45-Day Starter Kit
               </TabsTrigger>
               <TabsTrigger 
                 value="crm-dashboard" 
-                className="data-[state=active]:bg-[#F04438] data-[state=active]:text-black gap-2 font-medium py-2 px-4 transition-all"
+                className="data-[state=active]:bg-[#E2B53E] data-[state=active]:text-black gap-2 font-medium py-2 px-4 transition-all"
               >
                 <LayoutDashboard className="w-4 h-4" />
                 System
@@ -161,11 +161,11 @@ export default function Home() {
             <div className="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-end">
               <div className="flex flex-col items-end hidden md:flex">
                 <span className="text-xs text-slate-400 font-medium">Starter Kit Progress</span>
-                <span className="text-sm font-bold text-[#F04438]">{progressPercent}% Completed</span>
+                <span className="text-sm font-bold text-[#E2B53E]">{progressPercent}% Completed</span>
               </div>
               <div className="w-32 h-2 bg-zinc-800 rounded-full overflow-hidden hidden md:block">
                 <div 
-                  className="h-full bg-gradient-to-r from-[#F04438] to-[#F59E0B] transition-all duration-500" 
+                  className="h-full bg-gradient-to-r from-[#E2B53E] to-[#F59E0B] transition-all duration-500" 
                   style={{ width: `${progressPercent}%` }}
                 />
               </div>
@@ -188,8 +188,8 @@ export default function Home() {
             
             {/* Left Column: Timeline & Phases */}
             <div className="w-full lg:w-[350px] shrink-0 flex flex-col gap-4">
-              <h3 className="font-serif text-xl font-semibold text-[#F04438] flex items-center gap-2 px-1">
-                <Calendar className="w-5 h-5 text-[#F04438]" />
+              <h3 className="font-serif text-xl font-semibold text-[#E2B53E] flex items-center gap-2 px-1">
+                <Calendar className="w-5 h-5 text-[#E2B53E]" />
                 Operational Timeline
               </h3>
               
@@ -217,12 +217,12 @@ export default function Home() {
                       }}
                       className={`glass-card p-4 cursor-pointer text-left border transition-all duration-200 ${
                         isSelected 
-                          ? "border-[#F04438]/40 bg-zinc-900/80 shadow-[0_0_15px_rgba(226,181,62,0.04)]" 
+                          ? "border-[#E2B53E]/40 bg-zinc-900/80 shadow-[0_0_15px_rgba(226,181,62,0.04)]" 
                           : "border-white/[0.04] hover:border-white/[0.08] hover:bg-zinc-900/30"
                       }`}
                     >
                       <div className="flex justify-between items-start mb-1">
-                        <span className="text-xs text-[#F04438] font-semibold tracking-wider uppercase">
+                        <span className="text-xs text-[#E2B53E] font-semibold tracking-wider uppercase">
                           Phase {phase.id} • {phase.daysRange}
                         </span>
                         {phaseProgress === 100 && (
@@ -242,7 +242,7 @@ export default function Home() {
                       <div className="flex items-center justify-between gap-2">
                         <div className="flex-1 h-1 bg-zinc-800 rounded-full overflow-hidden">
                           <div 
-                            className="h-full bg-gradient-to-r from-[#F04438] to-[#F59E0B] transition-all"
+                            className="h-full bg-gradient-to-r from-[#E2B53E] to-[#F59E0B] transition-all"
                             style={{ width: `${phaseProgress}%` }}
                           />
                         </div>
@@ -276,7 +276,7 @@ export default function Home() {
                       onClick={() => setSelectedDayNum(lesson.day)}
                       className={`flex flex-col items-center justify-center py-2 px-4 rounded-lg shrink-0 transition-all min-w-[70px] ${
                         isDaySelected
-                          ? "bg-[#F04438] text-black font-semibold shadow-lg"
+                          ? "bg-[#E2B53E] text-black font-semibold shadow-lg"
                           : isLessonDone
                             ? "bg-[#74A35A]/10 border border-[#74A35A]/30 text-[#74A35A] hover:bg-[#74A35A]/20"
                             : "bg-zinc-900/40 border border-white/[0.02] text-slate-400 hover:bg-zinc-900/80 hover:text-slate-200"
@@ -295,7 +295,7 @@ export default function Home() {
                 {/* Header */}
                 <div className="border-b border-white/[0.06] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
-                    <span className="text-xs text-[#F04438] font-semibold tracking-widest uppercase">
+                    <span className="text-xs text-[#E2B53E] font-semibold tracking-widest uppercase">
                       {currentPhase.daysRange} • Lesson {selectedDayNum} of 45
                     </span>
                     <h2 className="font-serif text-2xl md:text-3xl font-bold text-white mt-1">
@@ -309,7 +309,7 @@ export default function Home() {
 
                 {/* Lesson Description & Guide */}
                 <div className="prose prose-invert prose-amber max-w-none text-slate-300 text-sm md:text-base leading-relaxed flex-1 overflow-y-auto max-h-[400px] pr-2">
-                  <p className="text-slate-200 font-medium text-base mb-6 italic border-l-2 border-[#F04438] pl-4 py-1 bg-[#F04438]/5 rounded-r-md">
+                  <p className="text-slate-200 font-medium text-base mb-6 italic border-l-2 border-[#E2B53E] pl-4 py-1 bg-[#E2B53E]/5 rounded-r-md">
                     {currentLesson.shortDesc}
                   </p>
                   
@@ -322,7 +322,7 @@ export default function Home() {
                         return parts.map((part, pIdx) => {
                           if (part.startsWith("**") && part.endsWith("**")) {
                             return (
-                              <strong key={pIdx} className="font-bold text-[#F04438]">
+                              <strong key={pIdx} className="font-bold text-[#E2B53E]">
                                 {part.slice(2, -2)}
                               </strong>
                             );
@@ -359,7 +359,7 @@ export default function Home() {
                                 if (matchBoldPrefix) {
                                   return (
                                     <div key={idx} className="flex items-start gap-3 p-3.5 rounded-lg bg-zinc-950/40 border border-white/[0.03] hover:border-white/[0.06] transition-all">
-                                      <span className="font-serif font-bold text-[#F04438] shrink-0 text-sm">{num}.</span>
+                                      <span className="font-serif font-bold text-[#E2B53E] shrink-0 text-sm">{num}.</span>
                                       <div className="text-slate-300 text-sm leading-relaxed">
                                         <strong className="text-white font-bold block sm:inline mr-1">
                                           {matchBoldPrefix[1].slice(2, -2)}:
@@ -372,7 +372,7 @@ export default function Home() {
 
                                 return (
                                   <div key={idx} className="flex items-start gap-3 p-3.5 rounded-lg bg-zinc-950/40 border border-white/[0.03] hover:border-white/[0.06] transition-all">
-                                    <span className="font-serif font-bold text-[#F04438] shrink-0 text-sm">{num}.</span>
+                                    <span className="font-serif font-bold text-[#E2B53E] shrink-0 text-sm">{num}.</span>
                                     <span className="text-slate-300 text-sm leading-relaxed">
                                       {renderInlineFormatting(cleanLi)}
                                     </span>
@@ -391,7 +391,7 @@ export default function Home() {
                                 if (matchBoldPrefix) {
                                   return (
                                     <div key={idx} className="flex items-start gap-2.5 p-3.5 rounded-lg bg-zinc-950/40 border border-white/[0.03] hover:border-white/[0.06] transition-all">
-                                      <span className="text-[#F04438] mt-1 shrink-0">•</span>
+                                      <span className="text-[#E2B53E] mt-1 shrink-0">•</span>
                                       <div className="text-slate-300 text-sm leading-relaxed">
                                         <strong className="text-white font-bold block sm:inline mr-1">
                                           {matchBoldPrefix[1].slice(2, -2)}:
@@ -404,7 +404,7 @@ export default function Home() {
 
                                 return (
                                   <div key={idx} className="flex items-start gap-2.5 p-3.5 rounded-lg bg-zinc-950/40 border border-white/[0.03] hover:border-white/[0.06] transition-all">
-                                    <span className="text-[#F04438] mt-1 shrink-0">•</span>
+                                    <span className="text-[#E2B53E] mt-1 shrink-0">•</span>
                                     <span className="text-slate-300 text-sm leading-relaxed">
                                       {renderInlineFormatting(cleanLi)}
                                     </span>
@@ -428,8 +428,8 @@ export default function Home() {
                         if (line.startsWith("###")) {
                           flushList();
                           elements.push(
-                            <h3 key={`h3-${keyCounter++}`} className="font-serif text-lg font-bold text-[#F04438] border-b border-white/[0.04] pb-1.5 mt-6 mb-3 flex items-center gap-2">
-                              <span className="w-1.5 h-1.5 rounded-full bg-[#F04438]" />
+                            <h3 key={`h3-${keyCounter++}`} className="font-serif text-lg font-bold text-[#E2B53E] border-b border-white/[0.04] pb-1.5 mt-6 mb-3 flex items-center gap-2">
+                              <span className="w-1.5 h-1.5 rounded-full bg-[#E2B53E]" />
                               {line.replace("###", "").trim()}
                             </h3>
                           );
@@ -483,7 +483,7 @@ export default function Home() {
                 {/* Day Tasks / Interactive Milestones */}
                 <div className="border-t border-white/[0.06] pt-6 shrink-0">
                   <h4 className="font-serif text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#F04438]" />
+                    <CheckCircle2 className="w-5 h-5 text-[#E2B53E]" />
                     Interactive Milestones for Day {selectedDayNum}
                   </h4>
                   
@@ -553,7 +553,7 @@ export default function Home() {
                         setSelectedDayNum(nextDay);
                       }
                     }}
-                    className="bg-[#F04438] text-black hover:bg-[#F04438]/90 font-semibold"
+                    className="bg-[#F04438] text-white hover:bg-[#F04438]/90 font-semibold"
                   >
                     Next Day
                     <ChevronRight className="w-4 h-4 ml-1" />
@@ -578,7 +578,7 @@ export default function Home() {
       <footer className="border-t border-white/[0.04] bg-zinc-950 py-6 text-center text-xs text-slate-500 mt-12 shrink-0">
         <div className="container flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
-            <span className="font-serif font-bold text-white text-sm">SNAXOLOGY<span className="text-[#F04438]">AI</span></span>
+            <span className="font-serif font-bold text-white text-sm">SNAXOLOGY<span className="text-[#E2B53E]">AI</span></span>
             <span className="text-zinc-700">|</span>
             <span>45-Day Starter Kit + CRM</span>
           </div>
@@ -890,7 +890,7 @@ function CrmDashboard() {
             onClick={() => setCrmSubTab(subTab.id)}
             className={`text-xs md:text-sm font-medium py-1.5 px-3.5 rounded-full transition-all ${
               crmSubTab === subTab.id
-                ? "bg-[#F04438] text-black font-semibold shadow-md"
+                ? "bg-[#E2B53E] text-black font-semibold shadow-md"
                 : "bg-zinc-900/40 border border-white/[0.04] text-slate-400 hover:bg-zinc-900/80 hover:text-slate-200"
             }`}
           >
@@ -908,7 +908,7 @@ function CrmDashboard() {
             <Card className="glass-card border border-white/[0.04] bg-zinc-950/20 p-6 flex flex-col justify-between">
               <div>
                 <h3 className="font-serif text-xl font-bold text-white mb-2 flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-[#F04438]" />
+                  <Sparkles className="w-5 h-5 text-[#E2B53E]" />
                   Welcome to Prospecting CRM
                 </h3>
                 <p className="text-slate-400 text-sm leading-relaxed">
@@ -919,7 +919,7 @@ function CrmDashboard() {
                 <Button 
                   size="sm" 
                   onClick={() => setCrmSubTab("prospects")}
-                  className="bg-[#F04438] text-black hover:bg-[#F04438]/90 text-xs font-semibold"
+                  className="bg-[#F04438] text-white hover:bg-[#F04438]/90 text-xs font-semibold"
                 >
                   Go to Prospecting Board
                 </Button>
@@ -927,7 +927,7 @@ function CrmDashboard() {
                   size="sm" 
                   variant="outline" 
                   onClick={() => setCrmSubTab("pitch-deck")}
-                  className="text-xs border-white/[0.08] hover:bg-zinc-900 text-[#F04438]"
+                  className="text-xs border-white/[0.08] hover:bg-zinc-900 text-[#E2B53E]"
                 >
                   <Presentation className="w-3.5 h-3.5 mr-1.5" />
                   Pitch Deck Builder
@@ -939,7 +939,7 @@ function CrmDashboard() {
             <Card className="glass-card border border-white/[0.04] bg-zinc-950/20 p-6 flex flex-col">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="font-serif text-lg font-bold text-white flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-[#F04438]" />
+                  <Clock className="w-4 h-4 text-[#E2B53E]" />
                   Upcoming Follow-Ups
                 </h3>
                 <Badge className="bg-rose-500/20 text-rose-400 hover:bg-rose-500/20 border border-rose-500/30 text-[10px]">
@@ -959,7 +959,7 @@ function CrmDashboard() {
                         <div className="text-[10px] text-slate-400 mt-1 flex items-center gap-2">
                           <span>Due: {task.dueDate}</span>
                           <span>•</span>
-                          <span className="text-[#F04438]">{task.prospectName}</span>
+                          <span className="text-[#E2B53E]">{task.prospectName}</span>
                         </div>
                       </div>
                       <Badge className={`text-[10px] ${
@@ -1092,14 +1092,14 @@ function CrmDashboard() {
                   size="sm" 
                   variant="outline"
                   onClick={() => document.getElementById("csv-file-input")?.click()}
-                  className="text-xs border-white/[0.08] hover:bg-zinc-900 text-[#F04438] gap-1.5"
+                  className="text-xs border-white/[0.08] hover:bg-zinc-900 text-[#E2B53E] gap-1.5"
                 >
                   <Upload className="w-3.5 h-3.5" /> Import CSV
                 </Button>
                 <Button 
                   size="sm" 
                   onClick={() => setShowAddProspect(true)}
-                  className="bg-[#F04438] text-black hover:bg-[#F04438]/90 text-xs font-semibold gap-1"
+                  className="bg-[#F04438] text-white hover:bg-[#F04438]/90 text-xs font-semibold gap-1"
                 >
                   <Plus className="w-3.5 h-3.5" /> Add Prospect
                 </Button>
@@ -1125,7 +1125,7 @@ function CrmDashboard() {
                         >
                           <div className="flex justify-between items-start">
                             <h4 className="text-xs font-bold text-white line-clamp-1">{prospect.name}</h4>
-                            <Badge className="bg-[#F04438]/10 text-[#F04438] hover:bg-[#F04438]/10 text-[9px] py-0 px-1">
+                            <Badge className="bg-[#E2B53E]/10 text-[#E2B53E] hover:bg-[#E2B53E]/10 text-[9px] py-0 px-1">
                               Score: {prospect.score}
                             </Badge>
                           </div>
@@ -1142,7 +1142,7 @@ function CrmDashboard() {
                             onClick={() => handleDownloadContract(prospect)}
                             className="w-full mt-1.5 flex items-center justify-center gap-1.5 py-1 px-2 rounded bg-zinc-800 hover:bg-zinc-700 text-slate-300 text-[10px] font-semibold border border-white/[0.02] transition-colors"
                           >
-                            <FileText className="w-3 h-3 text-[#F04438]" />
+                            <FileText className="w-3 h-3 text-[#E2B53E]" />
                             Download Contract
                           </button>
 
@@ -1168,7 +1168,7 @@ function CrmDashboard() {
                                   setProspects(prev => prev.map(p => p.id === prospect.id ? { ...p, status: statuses[nextIdx] } : p));
                                   toast.success(`Moved ${prospect.name} to ${statuses[nextIdx]}!`);
                                 }}
-                                className="text-[9px] text-black hover:bg-[#F04438]/90 py-0.5 px-1.5 bg-[#F04438] rounded font-semibold"
+                                className="text-[9px] text-black hover:bg-[#E2B53E]/90 py-0.5 px-1.5 bg-[#E2B53E] rounded font-semibold"
                               >
                                 Advance
                               </button>
@@ -1201,7 +1201,7 @@ function CrmDashboard() {
             <div className="flex justify-between items-center">
               <div>
                 <h3 className="font-serif text-lg font-bold text-white flex items-center gap-2">
-                  <MapIcon className="w-5 h-5 text-[#F04438]" />
+                  <MapIcon className="w-5 h-5 text-[#E2B53E]" />
                   Geographical Route Map
                 </h3>
                 <p className="text-xs text-slate-400 mt-0.5">
@@ -1263,7 +1263,7 @@ function CrmDashboard() {
                           size="sm"
                           variant="outline"
                           onClick={() => handleDownloadContract(prospect)}
-                          className="h-7 text-[10px] border-white/[0.08] hover:bg-zinc-900 text-[#F04438] hover:text-[#F04438]/90"
+                          className="h-7 text-[10px] border-white/[0.08] hover:bg-zinc-900 text-[#E2B53E] hover:text-[#E2B53E]/90"
                         >
                           <FileText className="w-3 h-3 mr-1" />
                           PDF Contract
@@ -1284,7 +1284,7 @@ function CrmDashboard() {
             {/* Customization Form */}
             <Card className="glass-card border border-white/[0.04] bg-zinc-950/20 p-6 w-full lg:w-[400px] shrink-0">
               <h3 className="font-serif text-lg font-bold text-white mb-4 flex items-center gap-2">
-                <Presentation className="w-5 h-5 text-[#F04438]" />
+                <Presentation className="w-5 h-5 text-[#E2B53E]" />
                 Branded Pitch Builder
               </h3>
               
@@ -1296,7 +1296,7 @@ function CrmDashboard() {
                     required
                     value={pitchData.businessName}
                     onChange={e => setPitchData(prev => ({ ...prev, businessName: e.target.value }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                     placeholder="e.g., Snaxology Services"
                   />
                 </div>
@@ -1307,7 +1307,7 @@ function CrmDashboard() {
                     required
                     value={pitchData.tagline}
                     onChange={e => setPitchData(prev => ({ ...prev, tagline: e.target.value }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                     placeholder="e.g., Premium Facility Solutions, Tailored to Your Workplace"
                   />
                 </div>
@@ -1318,7 +1318,7 @@ function CrmDashboard() {
                     required
                     value={pitchData.ownerName}
                     onChange={e => setPitchData(prev => ({ ...prev, ownerName: e.target.value }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                     placeholder="e.g., Business Owner"
                   />
                 </div>
@@ -1330,7 +1330,7 @@ function CrmDashboard() {
                       required
                       value={pitchData.phone}
                       onChange={e => setPitchData(prev => ({ ...prev, phone: e.target.value }))}
-                      className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                      className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                     />
                   </div>
                   <div>
@@ -1340,7 +1340,7 @@ function CrmDashboard() {
                       required
                       value={pitchData.email}
                       onChange={e => setPitchData(prev => ({ ...prev, email: e.target.value }))}
-                      className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                      className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                     />
                   </div>
                 </div>
@@ -1348,7 +1348,7 @@ function CrmDashboard() {
                   <label className="block text-slate-400 mb-1 font-medium">Presentation Color Palette</label>
                   <div className="grid grid-cols-4 gap-2 mt-1">
                     {[
-                      { id: "amber", label: "Amber/Gold", color: "bg-[#F04438]" },
+                      { id: "amber", label: "Amber/Gold", color: "bg-[#E2B53E]" },
                       { id: "emerald", label: "Emerald", color: "bg-emerald-500" },
                       { id: "blue", label: "Classic Blue", color: "bg-blue-500" },
                       { id: "indigo", label: "Indigo", color: "bg-indigo-500" }
@@ -1359,7 +1359,7 @@ function CrmDashboard() {
                         onClick={() => setPitchData(prev => ({ ...prev, colorTheme: theme.id }))}
                         className={`p-2 rounded border text-[10px] font-medium flex flex-col items-center gap-1.5 transition-all ${
                           pitchData.colorTheme === theme.id
-                            ? "border-[#F04438] bg-zinc-800 text-white font-bold"
+                            ? "border-[#E2B53E] bg-zinc-800 text-white font-bold"
                             : "border-white/[0.04] bg-zinc-900/40 text-slate-400 hover:bg-zinc-900"
                         }`}
                       >
@@ -1372,7 +1372,7 @@ function CrmDashboard() {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-[#F04438] text-black hover:bg-[#F04438]/90 font-semibold py-2.5 text-xs flex items-center justify-center gap-2 mt-6 shadow-md"
+                  className="w-full bg-[#F04438] text-white hover:bg-[#F04438]/90 font-semibold py-2.5 text-xs flex items-center justify-center gap-2 mt-6 shadow-md"
                 >
                   <Download className="w-4 h-4" />
                   Generate & Export Slide Deck PDF
@@ -1399,7 +1399,7 @@ function CrmDashboard() {
                   
                   {/* Decorative Mini Machine Outline */}
                   <div className={`w-10 h-14 border rounded mb-4 flex flex-col justify-between p-1 opacity-60 ${
-                    pitchData.colorTheme === "red" ? "border-[#F04438] text-[#F04438]" :
+                    pitchData.colorTheme === "amber" ? "border-[#E2B53E] text-[#E2B53E]" :
                     pitchData.colorTheme === "emerald" ? "border-emerald-500 text-emerald-500" :
                     pitchData.colorTheme === "blue" ? "border-blue-500 text-blue-500" : "border-indigo-500 text-indigo-500"
                   }`}>
@@ -1412,7 +1412,7 @@ function CrmDashboard() {
                   </h2>
                   
                   <p className={`font-serif italic text-xs md:text-sm text-center mt-1.5 ${
-                    pitchData.colorTheme === "red" ? "text-[#F04438]" :
+                    pitchData.colorTheme === "amber" ? "text-[#E2B53E]" :
                     pitchData.colorTheme === "emerald" ? "text-emerald-400" :
                     pitchData.colorTheme === "blue" ? "text-blue-400" : "text-indigo-400"
                   }`}>
@@ -1442,7 +1442,7 @@ function CrmDashboard() {
               <Button 
                 size="sm" 
                 onClick={() => setShowAddTask(true)}
-                className="bg-[#F04438] text-black hover:bg-[#F04438]/90 text-xs font-semibold"
+                className="bg-[#F04438] text-white hover:bg-[#F04438]/90 text-xs font-semibold"
               >
                 <Plus className="w-3.5 h-3.5 mr-1" /> Add Task
               </Button>
@@ -1487,7 +1487,7 @@ function CrmDashboard() {
                           <div className="text-[10px] text-slate-400 mt-1 flex items-center gap-2">
                             <span>Due: {task.dueDate}</span>
                             <span>•</span>
-                            <span className="text-[#F04438] font-medium">{task.prospectName}</span>
+                            <span className="text-[#E2B53E] font-medium">{task.prospectName}</span>
                           </div>
                         </div>
                       </div>
@@ -1540,7 +1540,7 @@ function CrmDashboard() {
                   required
                   value={newProspect.name}
                   onChange={e => setNewProspect(prev => ({ ...prev, name: e.target.value }))}
-                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                   placeholder="e.g., Apex Logistics Hub"
                 />
               </div>
@@ -1551,7 +1551,7 @@ function CrmDashboard() {
                   required
                   value={newProspect.address}
                   onChange={e => setNewProspect(prev => ({ ...prev, address: e.target.value }))}
-                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                   placeholder="e.g., 1420 Industrial Pkwy, Austin, TX"
                 />
               </div>
@@ -1562,7 +1562,7 @@ function CrmDashboard() {
                     type="text"
                     value={newProspect.contactName}
                     onChange={e => setNewProspect(prev => ({ ...prev, contactName: e.target.value }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                     placeholder="e.g., John Miller"
                   />
                 </div>
@@ -1572,7 +1572,7 @@ function CrmDashboard() {
                     type="text"
                     value={newProspect.phone}
                     onChange={e => setNewProspect(prev => ({ ...prev, phone: e.target.value }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                     placeholder="e.g., 512-555-0192"
                   />
                 </div>
@@ -1583,7 +1583,7 @@ function CrmDashboard() {
                   type="email"
                   value={newProspect.email}
                   onChange={e => setNewProspect(prev => ({ ...prev, email: e.target.value }))}
-                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                   placeholder="e.g., j.miller@apexlogistics.com"
                 />
               </div>
@@ -1596,7 +1596,7 @@ function CrmDashboard() {
                     max="25"
                     value={newProspect.score}
                     onChange={e => setNewProspect(prev => ({ ...prev, score: parseInt(e.target.value) || 15 }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                   />
                 </div>
                 <div>
@@ -1604,7 +1604,7 @@ function CrmDashboard() {
                   <select
                     value={newProspect.status}
                     onChange={e => setNewProspect(prev => ({ ...prev, status: e.target.value as Prospect["status"] }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                   >
                     <option value="New">New Prospect</option>
                     <option value="Contacted">Contacted</option>
@@ -1618,14 +1618,14 @@ function CrmDashboard() {
                 <textarea 
                   value={newProspect.notes}
                   onChange={e => setNewProspect(prev => ({ ...prev, notes: e.target.value }))}
-                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white h-20 focus:outline-none focus:border-[#F04438]"
+                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white h-20 focus:outline-none focus:border-[#E2B53E]"
                   placeholder="e.g., Blue collar environment, high foot traffic..."
                 />
               </div>
               
               <div className="flex justify-end gap-2 pt-4">
                 <Button type="button" variant="outline" onClick={() => setShowAddProspect(false)}>Cancel</Button>
-                <Button type="submit" className="bg-[#F04438] text-black hover:bg-[#F04438]/90 font-semibold">Save Prospect</Button>
+                <Button type="submit" className="bg-[#F04438] text-white hover:bg-[#F04438]/90 font-semibold">Save Prospect</Button>
               </div>
             </form>
           </div>
@@ -1645,7 +1645,7 @@ function CrmDashboard() {
                   required
                   value={newTask.title}
                   onChange={e => setNewTask(prev => ({ ...prev, title: e.target.value }))}
-                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                   placeholder="e.g., Call Sarah Connor to follow up on pitch"
                 />
               </div>
@@ -1657,7 +1657,7 @@ function CrmDashboard() {
                     required
                     value={newTask.dueDate}
                     onChange={e => setNewTask(prev => ({ ...prev, dueDate: e.target.value }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                   />
                 </div>
                 <div>
@@ -1665,7 +1665,7 @@ function CrmDashboard() {
                   <select
                     value={newTask.priority}
                     onChange={e => setNewTask(prev => ({ ...prev, priority: e.target.value as FollowUpTask["priority"] }))}
-                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                    className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                   >
                     <option value="Low">Low</option>
                     <option value="Medium">Medium</option>
@@ -1679,7 +1679,7 @@ function CrmDashboard() {
                 <select
                   value={newTask.prospectName}
                   onChange={e => setNewTask(prev => ({ ...prev, prospectName: e.target.value }))}
-                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#F04438]"
+                  className="w-full bg-zinc-900 border border-white/[0.06] rounded p-2.5 text-white focus:outline-none focus:border-[#E2B53E]"
                 >
                   <option value="">None / General</option>
                   {prospects.map(p => (
@@ -1690,7 +1690,7 @@ function CrmDashboard() {
               
               <div className="flex justify-end gap-2 pt-4">
                 <Button type="button" variant="outline" onClick={() => setShowAddTask(false)}>Cancel</Button>
-                <Button type="submit" className="bg-[#F04438] text-black hover:bg-[#F04438]/90 font-semibold">Create Task</Button>
+                <Button type="submit" className="bg-[#F04438] text-white hover:bg-[#F04438]/90 font-semibold">Create Task</Button>
               </div>
             </form>
           </div>
