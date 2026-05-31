@@ -532,7 +532,7 @@ export default function Home() {
                         setSelectedDayNum(prevDay);
                       }
                     }}
-                    className="border-white/[0.08] hover:bg-zinc-900"
+                    className="border-white/[0.08] hover:bg-[#F04438]/10 hover:text-[#F04438] hover:border-[#F04438]/20 transition-all"
                   >
                     Previous Day
                   </Button>
@@ -927,7 +927,7 @@ function CrmDashboard() {
                   size="sm" 
                   variant="outline" 
                   onClick={() => setCrmSubTab("pitch-deck")}
-                  className="text-xs border-white/[0.08] hover:bg-zinc-900 text-[#E2B53E]"
+                  className="text-xs border-[#F04438]/20 hover:bg-[#F04438]/10 text-[#F04438] hover:border-[#F04438]/30 transition-all"
                 >
                   <Presentation className="w-3.5 h-3.5 mr-1.5" />
                   Pitch Deck Builder
@@ -1092,7 +1092,7 @@ function CrmDashboard() {
                   size="sm" 
                   variant="outline"
                   onClick={() => document.getElementById("csv-file-input")?.click()}
-                  className="text-xs border-white/[0.08] hover:bg-zinc-900 text-[#E2B53E] gap-1.5"
+                  className="text-xs border-[#F04438]/20 hover:bg-[#F04438]/10 text-[#F04438] hover:border-[#F04438]/30 gap-1.5 transition-all"
                 >
                   <Upload className="w-3.5 h-3.5" /> Import CSV
                 </Button>
@@ -1263,7 +1263,7 @@ function CrmDashboard() {
                           size="sm"
                           variant="outline"
                           onClick={() => handleDownloadContract(prospect)}
-                          className="h-7 text-[10px] border-white/[0.08] hover:bg-zinc-900 text-[#E2B53E] hover:text-[#E2B53E]/90"
+                          className="h-7 text-[10px] border-[#F04438]/20 hover:bg-[#F04438]/10 text-[#F04438] hover:text-[#F04438]/90 hover:border-[#F04438]/30 transition-all"
                         >
                           <FileText className="w-3 h-3 mr-1" />
                           PDF Contract
